@@ -18,17 +18,14 @@ export default function AdminLayout({ children }) {
   }, []);
 
   return (
-    <div className="flex">
-      <AdminSidebar />
-
-      <div
-        className={`flex-1 transition-all duration-300 ease-in-out ${
-          isSidebarOpen ? "ml-60" : "ml-16"
-        }`}       
+    <>
+    <AdminHeader />
+      <aside
+        className="flex transition-all duration-300 ease-in-out "     
       >
-        <AdminHeader />
+         <AdminSidebar />
         <main className="p-4">{children}</main>
-      </div>
-    </div>
+      </aside>
+    </>
   );
 }

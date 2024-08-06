@@ -16,7 +16,7 @@ const AdminSidebar = () => {
         collapsed ? "w-16" : "w-60"
       } transition-all duration-300 ease-in-out`}
     >
-      <div className="p-4 flex flex-col justify-between h-full">
+      <div className="p-4 flex flex-col justify-between h-screen">
         <ul className="text-slate-300">
           <li className="flex items-center mb-4 group">
             <FaTachometerAlt className="mr-2 text-xl transition-transform transform group-hover:scale-110" />
